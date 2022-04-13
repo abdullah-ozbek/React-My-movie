@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "username": "alex",
+      "password": "alex"
+    }
+  ],
+  "movies": [
+    {
+      "name": "Hostage",
+      "rating": "7.6",
+      "imageURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4hne3v6jN4MlCnhSkxOW7YspJhr.jpg",
+      "overview": "When a mafia accountant is taken hostage on his beat, a police officer – wracked by guilt from a prior stint as a negotiator – must negotiate the standoff, even as his own family is held captive by the mob.",
+      "id": 13
+    },
+    {
+      "name": " The Walking Dead (2010) ",
+      "rating": "8.1",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/w21lgYIi9GeUH5dO8l3B9ARZbCB.jpg",
+      "overview": "The Walking Dead spielt bislang in der Metropolregion von Atlanta, im Südosten der Vereinigten Staaten, und erzählt vom Kampf einer kleinen Gruppe Überlebender nach einer weltweiten Zombie-Apokalypse. ",
+      "id": 14
+    },
+    {
+      "name": " Moon Knight (2022) ",
+      "rating": "8.7",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/m9fANhU0knW4wPmTekBCJFOmVve.jpg",
+      "overview": "Als dem sanftmütigen Souvenirverkäufer Steven Grant auf einmal Filmrisse und Erinnerungen an ein anderes Leben zu schaffen machen, findet er heraus, dass er an einer dissoziativen Identitätsstörung leidet, und seinen Körper mit dem Söldner  Spector teilt. Dann tauchen dessen Feinde in Stevens / Marcs Leben auf und während die beiden ihre komplexen Identitäten miteinander ausverhandeln und steuern müssen, finden sie sich inmitten der mächtigen Götter Ägyptens wieder.",
+      "id": 16
+    },
+    {
+      "name": "Outfit",
+      "rating": "7.9",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lZa5EB6PVJBT5mxhgZS5ftqdAm6.jpg",
+      "overview": "Leonard is an English tailor who used to craft suits on London’s world-famous Savile Row. After a personal tragedy, he’s ended up in Chicago, operating a small tailor shop in a rough part of town where he makes beautiful clothes for the only people around who can afford them: a family of vicious gangsters.",
+      "id": 17
+    },
+    {
+      "name": "An Interview with God (2018)",
+      "rating": "7.1",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/d9TeB8VLCgwSph2OSYK3lcHGf1f.jpg",
+      "overview": "An up-and-coming journalist finds his world and faith increasingly challenged when he's granted the interview of a lifetime – with someone who claims to be God.",
+      "id": 19
+    },
+    {
+      "name": " Europa Report (2013) ",
+      "rating": "6.3",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8ESULnUzfFhdnLWXphLVpyNMqUO.jpg",
+      "overview": "In der fernen Zukunft berichtet Dr. Samantha Unger, CEO der Firma „Europa Ventures“, von einer gescheiterten Mission: Eine sechsköpfige Crew von internationalen Astronauten und genialen Wissenschaftlern wird im Jahr 2061 auf eine geheime Mission zum vierten Jupitermond mit dem Namen \"Europa\" geschickt, nachdem viele Jahre zuvor unter dessen Oberfläche Wasser entdeckt wurde. Dort sollen die Wissenschaftler in den Eisbrocken nach möglichen außerirdischen Lebensformen suchen. Nach einem Jahr verlieren sie durch einen technischen Unfall jeglichen Kontakt zur Erde. Das Team will die Mission jedoch zu Ende führen und zeichnet weiterhin den Fortschritt mit Kameras auf. Sie finden neue Nahrungsformen und das Wasser entpuppt sich tatsächlich als flüssig, wodurch all ihre Hoffnungen und ihre Mission erfüllt zu sein scheinen. Die Crew macht sich für die Rückkehr zur Erde bereit, doch plötzlich spielen die Lichtsensoren verrückt und die Bewegungsmelder im Wasser schlagen Alarm...",
+      "id": 20
+    },
+    {
+      "name": " Reacher (2022) ",
+      "rating": "8.5",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bQnnKBe3VsvXKMoNCaYmRzs1Dup.jpg",
+      "overview": "Als Ex Militärpolizist Jack Reacher wegen eines Mordes, den er nicht begangen hat, verhaftet wird, findet er sich inmitten einer tödlichen Verschwörung korrupter Polizisten, dubioser Geschäftsleute und intriganter Politiker wieder und muss herausfinden, was in Margrave, Georgia, vor sich geht. Die erste Staffel von Reacher basiert auf dem internationalen Bestseller Größenwahn von Lee Child.",
+      "id": 21
+    }
+  ]
+}
