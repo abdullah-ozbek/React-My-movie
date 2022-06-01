@@ -68,6 +68,7 @@ function App() {
     admin.current = null
     fomularLeeren()
     setLoginStatus(false)
+    localStorage.setItem("user", null)
 }
 
   const [movies, setMovies] = useState([])
@@ -78,8 +79,6 @@ function App() {
   const [gewuechteList, setGewuechteList] = useState([])
   const [myFavorites, setMyFavorites] = useState([])
 
-    // nach Update von Favorites
- 
 
   useEffect(() => {
     // Favorites
@@ -91,6 +90,21 @@ function App() {
       favoritesString = JSON.stringify(myFavorites)
       localStorage.setItem("favorites", favoritesString)
     }
+
+    // User
+    let userString = localStorage.getItem("user") 
+    if (userString != null) {
+      const userArray = JSON.parse(userString)
+      admin.current = userArray
+    } else  {
+      userString = JSON.stringify(admin.current)
+      localStorage.setItem("user", userString)
+    }
+
+    //LoginStatus
+    if(admin.current !== null){
+      setLoginStatus(true)
+    }
   }, [])
 
   useEffect(() => { 
@@ -99,6 +113,14 @@ function App() {
       localStorage.setItem("favorites", favoritesString)
     }, 100);     
   }, [myFavorites])
+
+
+  useEffect(() => { 
+    setTimeout(() => {
+      const adminString = JSON.stringify(admin.current)
+      localStorage.setItem("user", adminString)
+    }, 100);     
+  }, [admin.current])
 
 
   const sortedMovies= movies.sort((a,b) =>{
@@ -117,8 +139,6 @@ function App() {
   }
 
   function addToFavorites(movie){
-    const favoritesString = JSON.stringify(myFavorites)
-    localStorage.setItem("favorites", favoritesString)
     setMyFavorites((currentState)=>{
       const control = currentState.filter((ele)=>{
         return movie.id === ele.id
@@ -215,23 +235,24 @@ function App() {
 
   return (
     <div className="App">
-      <Nav loginStatus={loginStatus} logOut={logOut} />
+      <Nav loginStatus={loginStatus} logOut={logOut} admin={admin} />
       <Routes>
-        <Route path="/" element={<> 
+        <Route path="/React-My-movie/" element={<> 
           <SearchBar searchMovie={searchMovie} />
           <Movielist movies={currentMovies}  //.length == 0 ? movies : gewuechteList gewuechteList.length == 0 ? movies : gewuechteList
                  deleteMovie={deleteMovie}
                  showAlert={showAlert}
                  addToFavorites={addToFavorites}
                  loginStatus={loginStatus}
+                 myFavorites={myFavorites}
           />
           <Mypagination movies={searchText === "" ? movies : gewuechteList} setCurrentPage={setCurrentPage} 
                         moviesProPages={moviesProPages} currentPage={currentPage} currentMovies={currentMovies}/>
         </>} />
-        <Route path="/add"  element={<Add addMovie={addMovie}/>} />
-        <Route path="/edit/:id"  element={<Edit movies={movies} editMovie={editMovie} />} />
-        <Route path="/favoriten"  element={<Favorites  liste={myFavorites} deleteFromFavorites={deleteFromFavorites} />} />
-        <Route path="/login"  element={<Login admin={admin} users={users} loginFormular={loginFormular}  
+        <Route path="/React-My-movie/add"  element={<Add addMovie={addMovie}/>} />
+        <Route path="/React-My-movie/edit/:id"  element={<Edit movies={movies} editMovie={editMovie} />} />
+        <Route path="/React-My-movie/favoriten"  element={<Favorites  liste={myFavorites} deleteFromFavorites={deleteFromFavorites} />} />
+        <Route path="/React-My-movie/login"  element={<Login admin={admin} users={users} loginFormular={loginFormular}  
                               loginEingeben={loginEingeben}  setLoginStatus={setLoginStatus} fomularLeeren ={fomularLeeren}/>} />
       </Routes>
       

@@ -30,7 +30,7 @@ function Login(props) {
                 <div className="mb-3 row">
                     <label className="col-sm-2 col-form-label">
                         Username:
-                        <div class="col-sm-10">
+                        <div className="col-sm-10">
                             <input type="text" name="username"
                                 value={props.loginFormular.username}
                                 onChange={props.loginEingeben}
@@ -49,7 +49,7 @@ function Login(props) {
                     <div>
                         <button type="button" onClick={() => {
                             logIn()
-                            navigate("/")
+                            navigate("/React-My-movie/")
                         }}
                         >Anmelden</button>
                     </div>

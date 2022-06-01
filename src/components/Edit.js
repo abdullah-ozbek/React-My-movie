@@ -42,7 +42,7 @@ function Edit(props) {
     function handleFormSubmit(e) {
         e.preventDefault();
         props.editMovie(params.id, movie)
-        navigate("/")
+        navigate("/React-My-movie/")
     }
   
     return (

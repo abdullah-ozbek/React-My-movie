@@ -22,7 +22,7 @@ function SearchBar(props) {
                     </div>
                     <div className="col-2">
                         <Link
-                            to="/add"
+                            to="/React-My-movie/add"
                             type="button"
                             className="btn btn-md btn-danger"
                             style={{ float: 'right' }}>Add Movie

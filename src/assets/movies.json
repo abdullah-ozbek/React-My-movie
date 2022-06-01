@@ -10,7 +10,7 @@
       "name": "Hostage",
       "rating": "7.6",
       "imageURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4hne3v6jN4MlCnhSkxOW7YspJhr.jpg",
-      "overview": "When a mafia accountant is taken hostage on his beat, a police officer – wracked by guilt from a prior stint as a negotiator – must negotiate the standoff, even as his own family is held captive by the mob.",
+      "overview": "When a mafia accountant is taken hostage on his beat, a police officer – wracked by guilt from a prior stint as a negotiator – must negotiate the standoff, even as his own family is held captive by the mobb.",
       "id": 13
     },
     {
@@ -54,6 +54,13 @@
       "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bQnnKBe3VsvXKMoNCaYmRzs1Dup.jpg",
       "overview": "Als Ex Militärpolizist Jack Reacher wegen eines Mordes, den er nicht begangen hat, verhaftet wird, findet er sich inmitten einer tödlichen Verschwörung korrupter Polizisten, dubioser Geschäftsleute und intriganter Politiker wieder und muss herausfinden, was in Margrave, Georgia, vor sich geht. Die erste Staffel von Reacher basiert auf dem internationalen Bestseller Größenwahn von Lee Child.",
       "id": 21
+    },
+    {
+      "name": " The Adam Project (2022) ",
+      "rating": "7.0",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rIRa1ZiemvXfVdtthIpsHxlIrCW.jpg",
+      "overview": "Der 12-jährige Adam Reed, der immer noch den plötzlichen Tod seines Vaters ein Jahr zuvor betrauert, betritt eines Nachts seine Garage und stellt fest, dass sich dort ein verwundeter Pilot versteckt. Dieser Pilot entpuppt sich als eine ältere Version von ihm selbst - aus einer Zukunft, in der die Zeitreiserei noch in den Kinderschuhen steckt. Er hat alles riskiert, um auf einer geheimen Mission in der Zeit zurückzureisen. Zusammen müssen sie sich auf ein Abenteuer in die Vergangenheit begeben, um ihren Vater zu finden und alles in Ordnung zu bringen. Erschwerend kommt hinzu, dass sich die zwei Adams nicht wirklich mögen. Wenn sie die Welt retten wollen, werden sie zuerst lernen müssen, miteinander auszukommen.",
+      "id": 22
     }
   ]
 }

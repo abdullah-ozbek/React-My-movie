@@ -10,7 +10,7 @@ function Add(props) {
         e.preventDefault();
         const newMovie =serialize(e.target, {hash:true})
         props.addMovie(newMovie)
-        navigate("/")
+        navigate("/React-My-movie/")
     }
 
     return (

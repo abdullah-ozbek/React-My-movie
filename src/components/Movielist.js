@@ -1,8 +1,17 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import { Link } from "react-router-dom"
 import { Alert, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 function Movielist(props) {
+
+
+    function isSelectedFavorite(product){
+       let selected = props.myFavorites.filter((favori)=>{
+           return favori.id === product.id
+        })
+        return selected
+    }
+
 
 
     function truncate(text, maxLength){
@@ -24,6 +33,7 @@ function Movielist(props) {
                     props.movies.sort((a,b) =>{
                           return a.id < b.id ? 1 : a.id > b.id ? -1 : 0
                          }).map((movie) => {
+                             let a = 0
                         return (
                             <div key={movie.id} className="col-lg-4">
                                 <div className="card mb-4 shadow-sm">
@@ -39,9 +49,9 @@ function Movielist(props) {
                                                         <Tooltip id='tooltip-top'>
                                                             Add to Favorites
                                                         </Tooltip>
-                                                    }>   
+                                                    }>                               
                                                 <button onClick={()=>{props.addToFavorites(movie)}}
-                                                        className="btn btn-md btn-outline-danger">Favoriten
+                                                        className={isSelectedFavorite(movie).length >0 ? "btn btn-md btn-danger" : "btn btn-md btn-outline-danger"}>Favoriten
                                                     </button>
                                                 </OverlayTrigger>
 
